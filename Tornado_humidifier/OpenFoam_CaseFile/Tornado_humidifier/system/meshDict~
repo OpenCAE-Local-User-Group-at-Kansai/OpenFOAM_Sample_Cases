@@ -1,0 +1,40 @@
+FoamFile
+{
+version	2;
+format	ascii;
+class	dictionary;
+location	"system";
+object	meshDict;
+}
+keepCellsIntersectingBoundary	0;
+maxCellSize	1;
+removeGluedMesh	1;
+surfaceFile	"tornade2R1.fms";
+boundaryLayers
+{
+	patchBoundaryLayers
+	{
+	}
+}
+keepCellsIntersectingPatches
+{
+}
+localRefinement
+{
+	fin
+	{
+		cellSize	0.01;
+	}
+}
+objectRefinements
+{
+	Box_#1
+	{
+		cellSize	0.1;
+		centre (0.0 0.0 10.0);
+		lengthX	30.0;
+		lengthY	90.0;
+		lengthZ	20.0;
+		type box;
+	}
+}
