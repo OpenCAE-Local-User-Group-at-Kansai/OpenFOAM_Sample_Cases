@@ -5,8 +5,14 @@ This repository provide the samples of OpenFOAM by OpenCAE Local User Group @ KA
 
 [Sample cases]
 
-1st: Flowing-Noodle-Machine(in Japanese, "nagashi-soumen-ki".)
+1st: Flowing-Noodle-Machine(FNM, in Japanese, "Nagashi-soumen-ki".)
 
-     Please look at the YouTube video for more information. -> https://www.youtube.com/watch?v=6laD5BzQJyo
+     Please look at the YouTube video for more information of FNM. -> https://www.youtube.com/watch?v=6laD5BzQJyo
      
      Analysis field: MRF, Multiphase 
+
+2nd: Tornado_humidifier
+
+     Tornado humidifier is an appendix of "Adult Science Magazine".  -> http://otonanokagaku.net/magazine/vol43/index.html
+     
+     Analysis field: Incomplessible, Tornado Flow 
