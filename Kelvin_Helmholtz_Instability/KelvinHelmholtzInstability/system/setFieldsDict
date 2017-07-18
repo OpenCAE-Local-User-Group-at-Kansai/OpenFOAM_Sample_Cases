@@ -1,0 +1,33 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+|       o          |                                                          |
+|    o     o       | HELYX-OS                                                  |
+|   o   O   o      | Version: v2.1.1                                           |
+|    o     o       | Web:     http://www.engys.com                            |
+|       o          |                                                          |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    location system;
+    object setFieldsDict;
+}
+
+defaultFieldValues
+(
+    volScalarFieldValue alpha.salt 0
+);
+
+regions
+(
+    boxToCell
+    {
+//        box (-1 -2.5 -1.1) (1 1 1.1);
+        box (-1 -2.5 -1.1) (1 0.00001 1.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salt 1
+        );
+    }
+);

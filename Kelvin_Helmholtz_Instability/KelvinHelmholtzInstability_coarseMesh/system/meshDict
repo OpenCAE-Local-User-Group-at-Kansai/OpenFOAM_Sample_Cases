@@ -1,0 +1,32 @@
+FoamFile
+{
+version	2;
+format	ascii;
+class	dictionary;
+location	"system";
+object	meshDict;
+}
+keepCellsIntersectingBoundary	0;
+maxCellSize	2;
+removeGluedMesh	1;
+surfaceFile	"aaaa.fms";
+boundaryLayers
+{
+	patchBoundaryLayers
+	{
+		wall
+		{
+			nLayers	4;
+			thicknessRatio1.2;
+		}
+	}
+}
+keepCellsIntersectingPatches
+{
+}
+localRefinement
+{
+}
+objectRefinements
+{
+}
